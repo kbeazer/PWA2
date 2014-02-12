@@ -333,12 +333,13 @@ input[name="user"]{
 	left: 30px;
 }
 
-.modal > h4:nth-child(10){
+.modal > h4:nth-child(10) > a:nth-child(1){
 	position: absolute;
-	top: 110px;
+	top: 130px;
 	left: 195px;
 	font-family: calibri;
 	color: #B25B00;
+	text-decoration: none;
 }
 
 .modal > input:nth-child(14){
