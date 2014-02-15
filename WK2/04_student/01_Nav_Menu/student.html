@@ -1,0 +1,82 @@
+<!doctype html>  
+
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+<title>Navigation Menu</title>
+
+<link rel="stylesheet" href="css/navbar.css">
+
+
+<!-- BEGIN JavaScript -->
+<script type="text/javascript"src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<!-- <script type="text/javascript" src="js/jquery-1.11.0.min.js"></script> -->
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('h1').css({color: "#315F63"});
+		
+		// Navigation Drop-down
+		$("nav ul li").hover(function(){
+			$(this).addClass("active");
+			$(this).slideDown( "slow" );
+			$(this).find("ul").show().animate({opacity: 1}, 400);
+			},function(){
+				$(this).find("ul").hide().animate({opacity: 0}, 200);
+				$(this).removeClass("active");
+		});
+
+		// Navigation Positioning
+		$('nav').css({position: "relative", background:"#C4EEF2",padding: "30px"});
+		$('#first').css({position: "absolute", top: "12px", left: "20px"});
+		$('#second').css({position: "absolute", top: "12px", left: "115px"});
+		$('#third').css({position: "absolute", top: "12px", left: "212px"});
+		$('#fourth').css({position: "absolute", top: "12px", left: "328px"});
+		$('#fifth').css({position: "absolute", top: "12px", left: "425px"});
+
+		// Required: Styling Elements
+		$('nav ul li ul li:first-child').prepend('<li class="arrow"></li>');
+		$('nav ul li first-child').addClass('last');
+		$('nav ul li ul').parent().append('<span class="dropdown"></span>').addClass('drop');
+	});
+</script>
+<!-- END JavaScript -->
+
+</head>
+
+<body>
+
+	<h1>Navigation menu</h1>
+
+	<div class="wrapper">
+	
+		<!-- Nav -->
+		<nav class="blue">
+			<ul class="clear">
+				<li id="first"><a href="#">Home</a></li>
+				<li id="second"><a href="#">About</a></li>
+				<li id="third"><a href="#">Products</a>
+					<ul>
+						<li><a href="#">Product1</a></li>
+						<li><a href="#">Product2</a></li>
+						<li><a href="#">Product3</a></li>
+						<li><a href="#">Product4</a></li>
+					</ul>
+				</li>
+				<li id="fourth"><a href="#">Stores</a></li>
+				<li id="fifth"><a href="#">Contact us</a></li>
+			</ul>
+		</nav>
+		<!-- END Nav -->
+		
+	</div>
+	
+</body>
+</html>
