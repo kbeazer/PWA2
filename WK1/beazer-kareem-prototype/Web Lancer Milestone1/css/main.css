@@ -107,7 +107,8 @@ button{
 	color: #B25B00; 
 }
 #heading{
-	margin-top:0;
+	width: 100%;
+	margin: 0 auto;
 	background: #fff; 	
 	overflow: hidden;
 }
@@ -147,15 +148,18 @@ img[src="images/web-lancer.png"]{
 }
 
 .main{
-	margin: 0;
+	width: 97.2%;
+	margin: 0 auto;
 	background: #19C5FF;
 	padding: 20px;
+	float: left;
 }
 
 .feature{
-	clear: left;
+	float: left;
 	background: #fff;
-	margin: 20px 60px;
+	margin-left: 110px;
+	padding: 10px;
 }
 
 #subMenu{
@@ -446,9 +450,9 @@ div[class="image-details"]{
 	text-align: center;
 	font-size: 36px;
 	padding: 8px;
-	position: absolute;
+	/*position: absolute;
 	top: 295px;
-	left: 560px;
+	left: 560px;*/
 }
 
 #projects a{
@@ -458,7 +462,7 @@ div[class="image-details"]{
 }
 
 .feature{
-	height: 380px;
+	/*height: 380px;*/
 }
 
 .layout{
