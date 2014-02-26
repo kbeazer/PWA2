@@ -1,0 +1,116 @@
+<div id="topallwrap">
+	<div id="topwrap" class="contrast shadow roundbot">
+		<div id="homelogo">
+			
+			<div class="bigintro"><h1 class="hidden">dossier: simple project management</h1></div>
+			<div class="login">
+				<p><img src="images/login.png" align="bottom" /> Already a user?</p>
+				<form id="login-form" method="get" action="url.php">
+					<input type="text" id="login-user" class="white round" placeholder="enter your username" />
+					<input type="password" id="login-pass" class="white round" placeholder="enter your password" />
+					<input type="submit" id="login-submit" class="contrast round" value="log in" />
+				</form>
+				<p>
+					<button id="newuser-btn" class="blue round">Join now, it's quick and easy!</button>
+				</p>
+				<div id="login-error-wrap">
+					<div id="login-error-tip"></div>
+					<div id="login-error-body">Invalid username or password.</div>
+				</div>
+			</div>
+			
+		</div>
+		
+	</div>
+</div>
+
+<div id="pageallwrap">
+	<div id="pagewrap" class="shadow round">
+		<div id="pagetop" class="eee roundtop">
+			<span class="pageloc"><a href="#">clients</a> / <a href="#">wizkids</a> / <a href="#">tasks</a></span>
+			<span class="backbtn"><a href="#"><span class="hidden">back</span></a></span>
+			<span class="addnew"><a href="#" class="roundtopright">+</a></span>
+		</div>
+		<div class="pagesep-dark dark"><span>due soon</span></div>
+		
+		<div id="itemcontainer">
+
+<!--
+			<div class="itemwrap">
+				<div class="itembox">
+					<div class="itemcolor green"></div>
+					<div class="itemcontent white">
+						<div class="itemtitles">
+							<h3 class="tasktitle">Work up player ui comps with really long description now</h3>
+							<h4 class="taskclient">Wizkids</h4>
+						</div>
+						<div class="itemdragbar"><a href="#"></a></div>
+						<div class="itemstatus">
+							<span class="itemdeleter dark"><a href="#"></a></span>
+							<div class="itemstatusinfo">
+								<p><span class="itemstatusname">Assigned: </span>Mike Smotherman</p>
+								<p><span class="itemstatusname">Updated: </span>6/20/10, 2:30pm</p>
+								<p><span class="itemstatusname">Due By: </span><a class="itemstatusdue" href="#">6/25/10</a><input class="itemstatusduein" value="6/25/10" type="text" style="width:0; height:0; border:0; padding:0; margin:0;" /></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="itemdetailswrap">
+					<div class="itemdetails insetshadow">
+						<div class="detailleft">
+							<h3>Description</h3>
+							<p>John requested that the player design comps resolve questions about feature setups including player matching.</p>
+							<h3>Task Needs</h3>
+							<ul>
+								<li>design player UI</li>
+								<li>design player meetups</li>
+								<li>login/logout</li>
+								<li>account settings</li>
+								<li>find games in your area</li>
+								<li>fully integrated game scheduling calendar system</li>
+							</ul>
+						</div>
+						<div class="detailright">
+							<div class="detailwhite">
+								<h3>Wizkids</h3>
+								<p>Justin Ziran<br />
+								justin.ziran@wizkidsgames.com<br />
+								555-555-5555</p>
+							</div>
+							<div class="detailwhite">
+								<h3>Status</h3>
+								<div class="detailstatus">
+									<form>
+									<input type="radio" id="radio1" name="radio" checked="checked" /><label for="radio1">urgent<span class="button-underline red"></span></label>
+									<input type="radio" id="radio2" name="radio" /><label for="radio2">active<span class="button-underline orange"></span></label>
+									<input type="radio" id="radio3" name="radio" /><label for="radio3">delayed<span class="button-underline yellow"></span></label>
+									<input type="radio" id="radio4" name="radio" /><label for="radio4">done<span class="button-underline green"></span></label>
+									</form>
+								</div>
+							</div>
+						</div>
+						<div class="clear"></div>
+					</div>
+				</div>
+			</div>
+-->				
+			
+			
+		</div>
+	</div>
+</div>
+
+<div id="user-register-wrap" title="Register New Account" class="hidden">
+	<form id="user-register-form">
+		<h3 class="dark">Signing up is free and only takes 2 minutes!</h3>
+		<input name="username" class="white round" type="text" value="username" placetext="username" />
+		<div class="register-helper">Username already taken.</div>
+		<input name="password" class="white round" type="password" value="password" placetext="password" />
+		<div class="register-helper">Please use at least 6 characters</div>
+		<input name="repass" class="white round" type="password" value="confirm password" placetext="confirm password" />
+		<div class="register-helper">Passwords must match.</div>
+		<input name="email" class="white round" type="text" value="email" placetext="email" />
+		<div class="register-helper">Email already taken.</div>
+		<input id="register-submit" class="blue round" type="submit" value="register" />
+	</form>
+</div>

@@ -1,0 +1,64 @@
+<div>
+
+	<script type="text/tmpl" id="tmpl-project">
+		<div class="itemwrap" data-projectid="{{=id}}">
+			<div class="itembox">
+				<div class="itemcolor green"></div>
+				<div class="itemcontent white">
+					<div class="itemtitles">
+						<h3 class="tasktitle">{{=projectName}}</h3>
+						<h4 class="taskclient">{{=clientName}}</h4>
+					</div>
+					<div class="itemdragbar"><a href="#"></a></div>
+					<div class="itemstatus">
+						<span class="itemdeleter dark"><a href="#"></a></span>
+						<div class="itemstatusinfo">
+							<p><span class="itemstatusname">Assigned: </span></p>
+							<p><span class="itemstatusname">Updated: </span>{{=updatedDate}}</p>
+							<p><span class="itemstatusname">Due By: </span><a class="itemstatusdue" href="#">{{=dueDate}}</a><input class="itemstatusduein" value="{{=dueDate}}" type="text" style="width:0; height:0; border:0; padding:0; margin:0;" /></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="itemdetailswrap">
+				<div class="itemdetails insetshadow">
+					<div class="detailleft">
+						<h3>Description</h3>
+						<p>{{=projectDescription}}</p>
+						<h3>Tasks</h3>
+						<!--
+						<ul>
+							<li>design player UI</li>
+							<li>design player meetups</li>
+							<li>login/logout</li>
+							<li>account settings</li>
+							<li>find games in your area</li>
+							<li>fully integrated game scheduling calendar system</li>
+						</ul>
+						-->
+					</div>
+					<div class="detailright">
+						<div class="detailwhite client" data-clientid="{{=clientID}}">
+							<h3>{{=clientName}}</h3>
+							<p><span class="contact"></span><br />
+							<span class="phone"></span><br />
+							<span class="email"></span></p>
+						</div>
+						<div class="detailwhite">
+							<h3>Status</h3>
+							<div class="detailstatus">
+								<form>
+								<input type="radio" id="radio{{=id}}-1" name="radio" checked="checked" /><label for="radio{{=id}}-1">urgent<span class="button-underline red"></span></label>
+								<input type="radio" id="radio{{=id}}-2" name="radio" /><label for="radio{{=id}}-2">active<span class="button-underline orange"></span></label>
+								<input type="radio" id="radio{{=id}}-3" name="radio" /><label for="radio{{=id}}-3">delayed<span class="button-underline yellow"></span></label>
+								<input type="radio" id="radio{{=id}}-4" name="radio" /><label for="radio{{=id}}-4">done<span class="button-underline green"></span></label>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</div>
+		</div>
+	</script>
+</div>

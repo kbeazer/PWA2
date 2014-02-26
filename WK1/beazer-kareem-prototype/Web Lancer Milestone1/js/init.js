@@ -1,12 +1,16 @@
 // $('.overlay, .modal').show();
 
 $(document).ready(function(){
-	$('#webLogo').mouseover(function(){
-		$(this).toggle('scale', '1.1');
+	$('.sgnin_btn').click(function(){
+		$('.overlay, .modal').show();
 	});
-	$('#webLogo').mouseout(function(){
-		$(this).toggle('scale');
-	});
+
+	// $('#webLogo').mouseover(function(){
+	// 	$(this).toggle('scale', '1.1');
+	// });
+	// $('#webLogo').mouseout(function(){
+	// 	$(this).toggle('scale');
+	// });
 
 	$('.details').css("opacity","0");
 	$('.details').hover(function(){		
@@ -15,7 +19,7 @@ $(document).ready(function(){
 		$(this).animate({opacity: 0, height:.1}, 1000);
 	});
 
-	$('#get-started').hover(function(){
+	$('#get-started, #find-job').hover(function(){
 		$(this).css('background-color', '#0085B2');
 	},function(){
 		$(this).css('background-color', '#FF8200')
@@ -52,20 +56,39 @@ $(document).ready(function(){
 		$(this).fadeTo(1000, .3);
 	});
 
-$('.overlay').click(function(){
-$('.modal').hide();
-$('.overlay').hide();
-	});
-
-	$('.overlay').click(function(){
+	$('.overlay, #cancelButton').click(function(){
 		$('.overlay').hide();
 		$('.modal').hide();
 	});
 
-	$('#signinButton').click(function(){
-		$(this).append();
+	$('#signinButton').click(function(e){
+		var user = $('#user').val();
+		var pass = $('#pass').val();
+
+		console.log(user);
+		console.log(pass);
+		alert('i was clicked');
+		
+		e.preventDefault();
+		
+		$.ajax({
+			url:'xhr/login.php', 
+			type: 'post',
+			dataType: 'json',
+			data: {
+				username: user,
+				password: pass
+			},
+
+			success: function(result){
+				console.log('result');	
+			}	
+		});
+
+
+
+
 	});
-	
 });
 
  

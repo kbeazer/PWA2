@@ -12,6 +12,7 @@ body{
 	padding: 0;
 	font-size: 100%;
 	background: #0085B2;
+	position: relative;
 }
 
 .container{
@@ -184,9 +185,8 @@ div[class="3-column"]{
 }
 
 #developer a{
-	position: absolute;
-	top: 380px;
-	left: 635px;
+	display: block;
+	text-align: center;
 	font-family: calibri;
 }
 
@@ -269,7 +269,7 @@ footer p{
     position: absolute;
     top: 0;
     left: 0;
-    height: 130%;
+    height: 100%;
     width: 100%;
     background-color: rgba(0,0,0,0.5);
     z-index: 10;
@@ -398,11 +398,10 @@ input[name="user"]{
 	color: #B25B00;
 }
 
-
-.modal > a:nth-child(19){
+#click-here{
 	position: absolute;
-	top: 267px;
 	left: 140px;
+	top: 266px;
 	text-decoration: none;
 	font-family: calibri;
 	color: #0085B2;
@@ -442,7 +441,13 @@ div[class="image-details"]{
 #get-started{
 	display: block;
 	width: 130px;
-	margin:20px 0 20px 640px;
+	margin:20px 0 20px 625px;
+}
+#find-job{
+	text-align: center;
+	display: block;
+	width: 130px;
+	margin:20px 0 20px 625px;
 }
 
 #heading > a:nth-child(4){
@@ -450,9 +455,6 @@ div[class="image-details"]{
 	text-align: center;
 	font-size: 36px;
 	padding: 8px;
-	/*position: absolute;
-	top: 295px;
-	left: 560px;*/
 }
 
 #projects a{
@@ -461,13 +463,8 @@ div[class="image-details"]{
 	font-family: calibri;
 }
 
-.feature{
-	/*height: 380px;*/
-}
-
 .layout{
 	width: 90%;
-	height: 660px;
 	margin: 0 auto;
 	background: #fff;
 }
@@ -480,7 +477,7 @@ div[class="image-details"]{
 }
 
 #browse{
-	margin-left: 80px;
+	text-align: center;
 }
 
 .image-details > h2{
@@ -506,52 +503,57 @@ h2[class="money"]{
 	font-size: 14px; 
 }
 
+.details{
+	display: inline-block;
+	width: 250px;
+}
+
 .hidden-1{
 	position: absolute;
-	top: 530px;
-	left: 180px;
+	top: 510px;
+	left: 170px;
 }
 
 .hidden-2{
 	position: absolute;
-	top: 530px;
-	left: 454px;
+	top: 510px;
+	left: 444px;
 }
 
 .hidden-3{
 	position: absolute;
-	top: 530px;
-	left: 728px;
+	top: 510px;
+	left: 718px;
 }
 
 .hidden-4{
 	position: absolute;
-	top: 530px;
-	left: 1002px;
+	top: 510px;
+	left: 992px;
 }
 
 .hidden-5{
 	position: absolute;
-	top: 820px;
-	left: 180px;
+	top: 800px;
+	left: 170px;
 }
 
 .hidden-6{
 	position: absolute;
-	top: 820px;
-	left: 454px;
+	top: 800px;
+	left: 444px;
 }
 
 .hidden-7{
 	position: absolute;
-	top: 820px;
-	left: 728px;
+	top: 800px;
+	left: 718px;
 }
 
 .hidden-8{
 	position: absolute;
-	top: 820px;
-	left: 1002px;
+	top: 800px;
+	left: 992px;
 }
 
 

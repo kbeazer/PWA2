@@ -16,16 +16,16 @@
   			<a href="index.html"><img src="images/close-box.png"></a>
   			<h1>Members please sign in:</h1>
   			<label for="user">User Name</label><br>
-  			<input type="text" name="user"><br>
-  			<label for="password">Password</label>
-  			<h4><a href="#">I forgot my password</h4></a><br>
-  			<input type="password" name="password"><br>
+  			<input id="user" type="text" name="user"><br>
+  			<label for="pass">Password</label>
+  			<h4><a href="#">I forgot my password</a></h4><br>
+  			<input id="pass" type="password" name="password"><br>
   			<input type="checkbox" required>
-  			<h4>Remember me</h4></br>
+  			<h4>Remember me</h4><br>
   			<input type="button" id="signinButton" value="Sign in">
   			<input type="button" id="cancelButton" value="Cancel">
   			<p>Not a member?</p>
-  			<a href="registration.html">Click here</a>
+  			<a id="click-here" href="registration.html">Click here</a>
   		</div>
 		
 		
@@ -37,7 +37,7 @@
 		<div id="heading">
 			<div id="top-nav">
 			<a href="registration.html">Register now</a>
-			<a id="sgnin_btn" href="#">Sign in</a>
+			<a class="sgnin_btn" href="#">Sign in</a>
 		</div>
 			<p id="tagline">Sign up and get connected today!</p>
 			<div id="ctaButton">

@@ -1,0 +1,606 @@
+/*---------------------Color Scheme------------------------
+#0085B2
+#19C5FF
+#00BEFF
+#B25B00
+#FF8200
+-----------------------------------------------------------
+*/
+body{
+	width: 100%;
+	margin: 0 auto;
+	padding: 0;
+	font-size: 100%;
+	background: #0085B2;
+}
+
+.container{
+	width: 50%;
+	margin: 0 auto;
+	padding: 10px;
+	background: #fff;
+	text-align: center;
+}
+
+.heading{
+	background-color: #fff;
+	text-align: center;
+	height: 400px;
+}
+
+.heading h2{
+	margin-top: 0;
+	padding-top: 100px;
+	font-family: calibri;
+	font-size: 40px;
+	color: #B25B00; 
+}
+
+.heading p{
+	padding-bottom: 20px;
+	font-family: calibri;
+	font-size: 18px;
+	color: #0085B2; 
+}
+
+.heading a:nth-child(4){
+	display: inline-block;
+	padding: 10px;
+	background: #00BEFF;
+	text-decoration: none;
+	font-family: calibri;
+	font-size: 18px;
+	color: #fff;
+	margin-bottom: 40px;
+}
+
+.heading a:nth-child(5){
+	position: absolute;
+	top: 0;
+	right: 0;
+	display: inline-block;
+	padding: 10px;
+	background: #00BEFF;
+	text-decoration: none;
+	font-family: calibri;
+	font-size: 18px;
+	color: #fff;
+	float: right;
+}
+
+.modal, .overlay{
+	display: none;
+}
+
+.container > h1{
+	font-family: calibri;
+	color: #B25B00;
+}
+
+.container :nth-child(2){
+	font-family: calibri;
+	color: #B25B00;
+}
+
+input{
+	display: block;
+	margin: 0 auto;
+	width: 300px;
+}
+
+.container label{
+	font-family: calibri;
+	color: #0085B2;
+	margin: 0 29%;
+	float: left;
+}
+
+input[type="checkbox"]{
+	position: absolute;
+	top: 580px;
+	left: 425px;
+}
+
+.container > p:nth-child(32){
+	position: absolute;
+	top: 560px;
+	left: 590px;
+	font-family: calibri;
+	color: #B25B00;
+}
+
+p > a{
+	text-decoration: none;
+	color: #0085B2;
+}
+
+#register{
+	margin-top: 35px;
+	width: 150px;
+	background: #FF8200;
+	color: #fff;
+	padding: 5px 40px;
+}
+
+#top-nav{
+	margin: 0;
+	padding: 10px;
+	background: #0085B2;
+	overflow: hidden;
+}
+
+#top-nav a{
+	display: inline-block;
+	padding: 10px;
+	background: #00BEFF;
+	text-decoration: none;
+	font-family: calibri;
+	font-size: 18px;
+	color: #fff;
+	float: right;
+	margin-right: 10px;
+}
+
+#tagline{
+	padding: 60px;
+	margin: auto;
+	text-align: center;
+	font-family: calibri;
+	font-size: 24px;
+	color: #B25B00; 
+}
+#heading{
+	width: 100%;
+	margin: 0 auto;
+	background: #fff; 	
+	overflow: hidden;
+}
+
+#ctaButton{
+	width: 300px;
+	margin: 0 auto;
+}
+
+#ctaButton > a, #heading > a{
+	padding: 15px;
+	background: #FF8200;
+	text-decoration: none;
+	font-family: calibri;
+	font-size: 18px;
+	color: #fff;
+}
+
+#ctaButton a{
+	display: inline-block;
+	float: left;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+#ctaButton a:nth-child(1){
+	margin-right:10px; 
+}
+
+img[src="images/web-lancer.png"]{
+	float: left;
+	margin: 10px 10px;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	z-index: 1;
+}
+
+.main{
+	width: 97.2%;
+	margin: 0 auto;
+	background: #19C5FF;
+	padding: 20px;
+	float: left;
+}
+
+.feature{
+	float: left;
+	background: #fff;
+	margin-left: 110px;
+	padding: 10px;
+}
+
+#subMenu{
+	margin: 0;
+	text-align: center;
+	padding: 20px;
+	font-family: calibri;
+	font-size: 24px;
+	color: #B25B00;
+}
+
+#perks{
+	margin-left: 130px;
+	clear: both;
+	position: relative;
+}
+
+div[class="3-column"]{
+	width: 300px;
+	padding: 20px;
+	float: left;
+}
+
+#developer a{
+	display: block;
+	text-align: center;
+	font-family: calibri;
+}
+
+#perks h2{
+	color: #0085B2;
+	font-family: calibri;
+	margin: 0;
+}
+
+#perks p{
+	color: #B25B00;
+	font-family: calibri;
+	margin-top: 5px;
+}
+
+p[class="name"]{
+	color: #0085B2;
+}
+
+.testimonial{
+	margin-left: 150px;
+	clear: left;
+	float: left;
+}
+
+.testimonial-1{
+	margin-left: 150px;
+}
+
+.testimonial p, .testimonial-1 p{
+	color: #0085B2;
+	font-family: calibri;
+	width: 300px;
+	margin: 0;
+}
+
+img[src="images/cmr-logo.jpg"]{
+	display: inline-block;
+	float: left;
+}
+
+.testimonial p{
+	float: left;
+}
+
+.testInfo{
+	float: left;
+	margin: 10px;
+}
+
+.name{
+	float: left;
+	clear: both;
+	color: #fff;
+}
+
+img[src="images/cfp.jpg"]{
+	display: inline-block;
+	float: left;
+}
+
+.testimonial-1 > p:nth-child(3){
+	position: absolute;
+	top: 760px;
+	left: 850px;
+	color: #00BEFF;
+}
+
+footer{
+	clear: both;
+}
+
+footer p{
+	text-align: center;
+	font-family: calibri;
+	color: #fff;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 130%;
+    width: 100%;
+    background-color: #000;
+    z-index: 10;
+}
+
+/* just some content with arbitrary styles for explanation purposes */
+.modal {
+    width: 400px;
+    height: 350px;
+    position: fixed;
+    top: 50%; 
+    left: 50%;
+    margin-top: -100px;
+    margin-left: -150px;
+    background-color: #fff;
+    border-radius: 5px;
+    z-index: 11; /* 1px higher than the overlay layer */
+}
+
+img[src="images/lock.png"]{
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+
+.modal :nth-child(2){
+	position: absolute;
+	top: -8px;
+	left: 30px;
+	font-family: calibri;
+	color: #0085B2;
+}
+
+img[src="images/close-box.png"]{
+	position: absolute;
+	top: 10px;
+	left: 375px;
+}
+
+.modal :nth-child(4){
+	position: absolute;
+	top: 15px;
+	left: 30px;
+	font-family: calibri;
+	color: #B25B00;
+}
+
+.modal :nth-child(5){
+	position: absolute;
+	top: 80px;
+	left: 30px;
+	font-family: calibri;
+	color: #0085B2;
+}
+
+input[name="user"]{
+	position: absolute;
+	top: 100px;
+	left: 30px;
+}
+
+.modal > label:nth-child(9){
+	position: absolute;
+	top: 130px;
+	left: 30px;
+	font-family: calibri;
+	color: #0085B2;
+}
+
+.modal > input:nth-child(12){
+	position: absolute;
+	top: 150px;
+	left: 30px;
+}
+
+.modal > h4:nth-child(10) > a:nth-child(1){
+	position: absolute;
+	top: 130px;
+	left: 195px;
+	font-family: calibri;
+	color: #B25B00;
+	text-decoration: none;
+}
+
+.modal > input:nth-child(14){
+	position: absolute;
+	top: 185px;
+	left: -115px;
+}
+
+.modal > h4:nth-child(15){
+	position: absolute;
+	top: 160px;
+	left: 50px;
+	font-family: calibri;
+	color: #B25B00;
+}
+
+#signinButton{
+	position: absolute;
+	top: 210px;
+	left: 30px;
+	width: 150px;
+	height: 40px;
+	background: #FF8200;
+	font-family: calibri;
+	color: #fff;
+}
+
+#cancelButton{
+	position: absolute;
+	top: 210px;
+	left: 200px;
+	width: 150px;
+	height: 40px;
+	background: #FF8200;
+	font-family: calibri;
+	color: #fff;
+}
+
+.modal > p{
+	position: absolute;
+	top: 250px;
+	left: 30px;
+	font-family: calibri;
+	color: #B25B00;
+}
+
+#click-here{
+	position: absolute;
+	left: 140px;
+	top: 266px;
+	text-decoration: none;
+	font-family: calibri;
+	color: #0085B2;
+}
+
+div[class="4-column"]{
+	display: inline-block;
+	width: 250px;
+	padding: 10px;
+	background: #fff;
+}
+
+div[class="image-details"]{
+	background: #B25B00;
+	padding: 10px;
+}
+
+#accordian{
+	text-align: center;
+}
+
+#accordian select{
+	background: #0085B2;
+	padding: 10px;
+	font-family: calibri;
+	font-size: 18px;
+	color: #fff;
+}
+
+#accordian select option{
+	background: #fff;
+	font-family: calibri;
+	font-size: 18px;
+	color: #B25B00
+}
+
+#get-started{
+	display: block;
+	text-align: center;
+	width: 130px;
+	margin: 20px auto;
+}
+
+#find-job{
+	text-align: center;
+	display: block;
+	width: 130px;
+	margin:20px auto;
+}
+
+#heading > a:nth-child(4){
+	width: 267px;
+	text-align: center;
+	font-size: 36px;
+	padding: 8px;
+}
+
+#projects a{
+	display: block;
+	text-align: center;
+	font-family: calibri;
+}
+
+.layout{
+	width: 90%;
+	margin: 0 auto;
+	background: #fff;
+}
+
+.layout > h2{
+	text-align: center;
+	padding-top: 20px;
+	font-family: calibri;
+	color: #B25B00;
+}
+
+#browse{
+	margin-left: 6%;
+}
+
+.image-details > h2{
+	font-size: 100%;
+	margin: 0;
+	width: 70%;
+	font-family: calibri;
+	color: #fff;
+	display: inline-block;
+}
+
+h2[class="money"]{
+	float: right;
+	text-align: right;
+	font-size: 24px;
+	width: 20%;
+}
+
+#browse h4{
+	margin: 0;
+	font-family: calibri;
+	color: #FF8200;
+	font-size: 14px; 
+}
+
+.details{
+	display: inline-block;
+	width: 250px;
+}
+
+.hidden-1{
+	position: absolute;
+	top: 512px;
+	left: 171px;
+}
+
+.hidden-2{
+	position: absolute;
+	top: 512px;
+	left: 445px;
+}
+
+.hidden-3{
+	position: absolute;
+	top: 512px;
+	left: 719px;
+}
+
+.hidden-4{
+	position: absolute;
+	top: 512px;
+	left: 993px;
+}
+
+.hidden-5{
+	position: absolute;
+	top: 802px;
+	left: 171px;
+}
+
+.hidden-6{
+	position: absolute;
+	top: 802px;
+	left: 445px;
+}
+
+.hidden-7{
+	position: absolute;
+	top: 802px;
+	left: 719px;
+}
+
+.hidden-8{
+	position: absolute;
+	top: 802px;
+	left: 993px;
+}
+
+
+
+
+
