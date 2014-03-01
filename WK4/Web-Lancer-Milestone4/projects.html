@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>Web Lancer</title>
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+	</head>
+
+	<body>
+
+		<div class="overlay"><a href="index.html"></a></div>
+  		<div class="modal">
+  			<img src="images/lock.png">
+  			<h4>Secured connection</h4>
+  			<a href="index.html"><img src="images/close-box.png"></a>
+  			<h1>Members please sign in:</h1>
+  			<label for="user">User Name</label><br>
+  			<input type="text" name="user"><br>
+  			<label for="password">Password</label>
+  			<h4><a href="#">I forgot my password</h4></a><br>
+  			<input type="password" name="password"><br>
+  			<input type="checkbox" required>
+  			<h4>Remember me</h4></br>
+  			<input type="button" id="signinButton" value="Sign in">
+  			<input type="button" id="cancelButton" value="Cancel">
+  			<p>Not a member?</p>
+  			<a id="click-here" href="registration.html">Click here</a>
+  		</div>
+		
+		<div id="top-nav">
+			<a href="index.html">Log Out</a>
+		</div>
+
+		<div>
+			<a href="dashboard.html"><img id="webLogo" src="images/web-lancer.png" alt="web lancer logo"></a>
+		</div>
+
+		<div id="heading">
+			<h1 id="tagline">Search for jobs and start earning money</h1>
+			
+			<form id="accordian">
+				<select name="developers">
+					<option value="select a category">Select a Category</option>
+					<option value="mobile development">Mobile Development</option>
+					<option value="web design">Web Design</option>
+					<option value="javascript developers">Javascript</option>
+					<option value="css3/html developers">CSS3/HTML</option>
+					<option value="frontend/backend development">Frontend/Backend Development</option>
+				</select>
+			</form>
+			<a href="dashboard.html" id="find-job">Find a Job</a>
+			<p id="developer"><a href="developer.html">Looking for a Developer?</a></p>
+		</div>
+
+		<div class="main">
+			<div class="layout">
+				<h2>Connect with clients and start working today!</h2>
+
+				<div id="browse">
+					<div id="clients">
+						<a href="#"><img id="slide" src="images/group-meeting.jpg"></a>
+					</div>
+				</div> 	
+				<div id="pHide">
+					<h4>Enjoy the freedom of being able to work remotely from anywhere across the globe.</h4>
+					<p>Get connected with real clients with job offers that pay!</p>
+					<p>Browse profiles, portfolios, and listings to locate the right job for you.</p>
+					<p>Start advancing your career immediately.</p>
+					<p>Don't delay any longer, start your job search today.</p>
+				</div>
+				
+			</div>
+		</div>
+
+		<footer>
+			<p>&copy; Web Lancer 2014</p>
+		</footer>
+		<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript" src="js/init.js"></script>
+	</body>
+
+</html>
